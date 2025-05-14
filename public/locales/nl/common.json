@@ -1,0 +1,37 @@
+{
+  "menu": {
+    "title": "Ons Menu",
+    "description": "Ontdek onze zorgvuldig samengestelde gerechten gemaakt met de beste ingrediënten"
+  },
+  "reservation": {
+    "title": "Reserveren",
+    "description": "Reserveer een tafel bij Restaurant Delbi voor een onvergetelijke dinerervaring",
+    "form": {
+      "fullName": "Volledige naam",
+      "email": "E-mailadres",
+      "phone": "Telefoonnummer",
+      "date": "Datum",
+      "time": "Tijd",
+      "guests": "Aantal gasten",
+      "specialRequests": "Speciale verzoeken",
+      "submit": "Reserveren",
+      "verification": "Verificatiecode",
+      "verify": "Verifiëren",
+      "success": "Reservering succesvol ingediend! U wordt doorgestuurd naar de homepage..."
+    },
+    "validation": {
+      "name": "Voer een geldige naam in (2-50 tekens, alleen letters)",
+      "email": "Voer een geldig e-mailadres in",
+      "phone": "Voer een geldig telefoonnummer in",
+      "date": "Selecteer een toekomstige datum",
+      "time": "Selecteer een tijd",
+      "guests": "Selecteer tussen 1 en 10 gasten"
+    }
+  },
+  "navigation": {
+    "home": "Home",
+    "menu": "Menu",
+    "reservation": "Reserveren",
+    "contact": "Contact"
+  }
+} 

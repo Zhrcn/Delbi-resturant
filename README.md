@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Delbi Restaurant Website
+
+A modern restaurant website built with Next.js, React, and Tailwind CSS. Features include a responsive design, online reservation system, admin dashboard, and Google Analytics integration.
+
+## Features
+
+- 🎨 Modern and responsive design
+- 📱 Mobile-first approach
+- 🍽️ Online reservation system
+- 📊 Admin dashboard with analytics
+- 🔒 Secure authentication
+- 📈 Google Analytics integration
+- 🍪 Cookie consent management
+- 🛡️ Anti-spam protection for reservations
+
+## Prerequisites
+
+- Node.js 18.x or later
+- npm or yarn
+- Google Analytics account (for analytics)
+- Combell hosting account (for deployment)
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/delbi-restaurant.git
+cd delbi-restaurant
+```
 
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Create a `.env.local` file in the root directory and add your environment variables:
+```env
+NEXT_PUBLIC_GA_ID=your-google-analytics-id
+```
+
+4. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Deployment to Combell
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Build the project:
+```bash
+npm run build
+# or
+yarn build
+```
 
-## Learn More
+2. Configure your Combell hosting:
+   - Set up SSL certificate
+   - Configure domain settings
+   - Set up Node.js environment
 
-To learn more about Next.js, take a look at the following resources:
+3. Deploy the built files to your Combell hosting:
+   - Upload the contents of the `.next` directory
+   - Configure the server to run `npm start`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Admin Access
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Default admin credentials:
+- Username: admin
+- Password: admin123
 
-## Deploy on Vercel
+**Important:** Change these credentials in production!
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Project Structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+delbi-restaurant/
+├── src/
+│   ├── components/     # Reusable components
+│   ├── pages/         # Next.js pages
+│   ├── styles/        # Global styles
+│   └── utils/         # Utility functions
+├── public/            # Static assets
+└── ...
+```
+
+## Security Features
+
+- Protected admin routes
+- Anti-spam measures for reservations
+- Cookie consent management
+- Form validation
+- Rate limiting
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Support
+
+For support, email support@delbi.com or create an issue in the repository.

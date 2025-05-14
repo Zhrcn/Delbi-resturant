@@ -1,0 +1,114 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "menu": "Menu",
+    "about": "À Propos",
+    "reservation": "Réservation"
+  },
+  "hero": {
+    "title": "Bienvenue au Restaurant Delbi",
+    "subtitle": "Découvrez une cuisine authentique dans une atmosphère chaleureuse",
+    "cta": "Réserver une Table"
+  },
+  "features": {
+    "title": "Pourquoi Choisir Delbi?",
+    "subtitle": "Découvrez ce qui rend notre restaurant spécial",
+    "fresh": {
+      "title": "Ingrédients Frais",
+      "description": "Nous utilisons uniquement les ingrédients les plus frais, produits localement"
+    },
+    "chefs": {
+      "title": "Chefs Experts",
+      "description": "Nos chefs expérimentés créent des chefs-d'œuvre culinaires chaque jour"
+    },
+    "timing": {
+      "title": "Timing Parfait",
+      "description": "Profitez de votre repas à votre rythme dans notre cadre confortable"
+    }
+  },
+  "cta": {
+    "title": "Prêt à Découvrir Delbi?",
+    "subtitle": "Réservez votre table maintenant et profitez d'une expérience culinaire inoubliable",
+    "button": "Réserver une Table"
+  },
+  "cookie": {
+    "message": "Nous utilisons des cookies pour améliorer votre expérience et analyser notre trafic. En cliquant sur \"Accepter\", vous consentez à notre utilisation des cookies.",
+    "accept": "Accepter les Cookies"
+  },
+  "footer": {
+    "contact": {
+      "title": "Contact",
+      "address": "123 Rue du Restaurant, Ville, Pays",
+      "phone": "Tél: +33 1 23 45 67 89",
+      "email": "Email: info@delbi.fr"
+    },
+    "quickLinks": {
+      "title": "Liens Rapides",
+      "home": "Accueil",
+      "menu": "Menu",
+      "about": "À Propos",
+      "reservation": "Réservation"
+    },
+    "hours": {
+      "title": "Heures d'Ouverture",
+      "weekdays": "Lundi - Vendredi: 11:00 - 22:00",
+      "weekend": "Samedi - Dimanche: 10:00 - 23:00"
+    },
+    "social": {
+      "title": "Suivez-Nous",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "twitter": "Twitter"
+    },
+    "copyright": "Tous droits réservés."
+  },
+  "reservation": {
+    "title": "Faire une Réservation",
+    "description": "Réservez votre table au Restaurant Delbi",
+    "success": "Votre réservation a été soumise avec succès !",
+    "verification": {
+      "label": "Code de Vérification",
+      "placeholder": "Entrez le code envoyé à votre e-mail",
+      "submit": "Vérifier",
+      "submitting": "Vérification..."
+    },
+    "form": {
+      "name": "Nom Complet",
+      "name.placeholder": "Entrez votre nom complet",
+      "email": "E-mail",
+      "email.placeholder": "Entrez votre e-mail",
+      "phone": "Numéro de Téléphone",
+      "phone.placeholder": "Entrez votre numéro de téléphone",
+      "date": "Date",
+      "time": "Heure",
+      "guests": "Nombre de Personnes",
+      "guests.options": {
+        "1": "1 Personne",
+        "2": "2 Personnes",
+        "3": "3 Personnes",
+        "4": "4 Personnes",
+        "5": "5 Personnes",
+        "6": "6 Personnes",
+        "7": "7 Personnes",
+        "8": "8 Personnes"
+      },
+      "specialRequests": "Demandes Spéciales",
+      "submit": "Réserver Maintenant",
+      "submitting": "Réservation..."
+    },
+    "validation": {
+      "name": "Veuillez entrer un nom valide (2-50 caractères, lettres uniquement)",
+      "email": "Veuillez entrer une adresse e-mail valide",
+      "phone": "Veuillez entrer un numéro de téléphone valide",
+      "date": "Veuillez sélectionner une date future",
+      "time": "Veuillez sélectionner une heure",
+      "guests": "Veuillez sélectionner entre 1 et 10 personnes",
+      "cooldown": "Veuillez patienter un moment avant de réessayer",
+      "tooManyAttempts": "Trop de tentatives. Veuillez réessayer plus tard.",
+      "verificationFailed": "Échec de l'envoi du code de vérification",
+      "verificationError": "Échec de l'envoi du code de vérification. Veuillez réessayer.",
+      "invalidCode": "Code de vérification invalide",
+      "saveFailed": "Échec de l'enregistrement de la réservation"
+    }
+  }
+} 

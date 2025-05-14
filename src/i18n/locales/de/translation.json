@@ -1,0 +1,114 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "menu": "Menü",
+    "about": "Über Uns",
+    "reservation": "Reservierung"
+  },
+  "hero": {
+    "title": "Willkommen im Restaurant Delbi",
+    "subtitle": "Erleben Sie authentische Küche in einer warmen und einladenden Atmosphäre",
+    "cta": "Tisch Reservieren"
+  },
+  "features": {
+    "title": "Warum Delbi Wählen?",
+    "subtitle": "Entdecken Sie, was unser Restaurant besonders macht",
+    "fresh": {
+      "title": "Frische Zutaten",
+      "description": "Wir verwenden nur die frischesten, lokal bezogenen Zutaten in unseren Gerichten"
+    },
+    "chefs": {
+      "title": "Expertenköche",
+      "description": "Unsere erfahrenen Köche kreieren täglich kulinarische Meisterwerke"
+    },
+    "timing": {
+      "title": "Perfektes Timing",
+      "description": "Genießen Sie Ihr Essen in Ihrem eigenen Tempo in unserer komfortablen Umgebung"
+    }
+  },
+  "cta": {
+    "title": "Bereit, Delbi zu Erleben?",
+    "subtitle": "Reservieren Sie jetzt Ihren Tisch und genießen Sie ein unvergessliches Dinerlebnis",
+    "button": "Tisch Reservieren"
+  },
+  "cookie": {
+    "message": "Wir verwenden Cookies, um Ihr Erlebnis zu verbessern und unseren Verkehr zu analysieren. Durch Klicken auf \"Akzeptieren\" stimmen Sie unserer Verwendung von Cookies zu.",
+    "accept": "Cookies Akzeptieren"
+  },
+  "footer": {
+    "contact": {
+      "title": "Kontakt",
+      "address": "Restaurantstraße 123, Stadt, Land",
+      "phone": "Tel: +49 123 456789",
+      "email": "Email: info@delbi.de"
+    },
+    "quickLinks": {
+      "title": "Schnelllinks",
+      "home": "Startseite",
+      "menu": "Menü",
+      "about": "Über Uns",
+      "reservation": "Reservierung"
+    },
+    "hours": {
+      "title": "Öffnungszeiten",
+      "weekdays": "Montag - Freitag: 11:00 - 22:00",
+      "weekend": "Samstag - Sonntag: 10:00 - 23:00"
+    },
+    "social": {
+      "title": "Folgen Sie Uns",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "twitter": "Twitter"
+    },
+    "copyright": "Alle Rechte vorbehalten."
+  },
+  "reservation": {
+    "title": "Tisch Reservieren",
+    "description": "Reservieren Sie Ihren Tisch im Restaurant Delbi",
+    "success": "Ihre Reservierung wurde erfolgreich eingereicht!",
+    "verification": {
+      "label": "Verifizierungscode",
+      "placeholder": "Geben Sie den an Ihre E-Mail gesendeten Code ein",
+      "submit": "Verifizieren",
+      "submitting": "Verifizierung..."
+    },
+    "form": {
+      "name": "Vollständiger Name",
+      "name.placeholder": "Geben Sie Ihren vollständigen Namen ein",
+      "email": "E-Mail",
+      "email.placeholder": "Geben Sie Ihre E-Mail-Adresse ein",
+      "phone": "Telefonnummer",
+      "phone.placeholder": "Geben Sie Ihre Telefonnummer ein",
+      "date": "Datum",
+      "time": "Uhrzeit",
+      "guests": "Anzahl der Gäste",
+      "guests.options": {
+        "1": "1 Person",
+        "2": "2 Personen",
+        "3": "3 Personen",
+        "4": "4 Personen",
+        "5": "5 Personen",
+        "6": "6 Personen",
+        "7": "7 Personen",
+        "8": "8 Personen"
+      },
+      "specialRequests": "Besondere Wünsche",
+      "submit": "Jetzt Reservieren",
+      "submitting": "Reservierung..."
+    },
+    "validation": {
+      "name": "Bitte geben Sie einen gültigen Namen ein (2-50 Zeichen, nur Buchstaben)",
+      "email": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+      "phone": "Bitte geben Sie eine gültige Telefonnummer ein",
+      "date": "Bitte wählen Sie ein zukünftiges Datum",
+      "time": "Bitte wählen Sie eine Uhrzeit",
+      "guests": "Bitte wählen Sie zwischen 1 und 10 Gästen",
+      "cooldown": "Bitte warten Sie einen Moment, bevor Sie es erneut versuchen",
+      "tooManyAttempts": "Zu viele Versuche. Bitte versuchen Sie es später erneut.",
+      "verificationFailed": "Verifizierungscode konnte nicht gesendet werden",
+      "verificationError": "Verifizierungscode konnte nicht gesendet werden. Bitte versuchen Sie es erneut.",
+      "invalidCode": "Ungültiger Verifizierungscode",
+      "saveFailed": "Reservierung konnte nicht gespeichert werden"
+    }
+  }
+} 

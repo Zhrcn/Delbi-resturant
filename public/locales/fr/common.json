@@ -1,0 +1,37 @@
+{
+  "menu": {
+    "title": "Notre Menu",
+    "description": "Découvrez nos plats soigneusement élaborés avec les meilleurs ingrédients"
+  },
+  "reservation": {
+    "title": "Faire une Réservation",
+    "description": "Réservez votre table au Restaurant Delbi pour une expérience culinaire inoubliable",
+    "form": {
+      "fullName": "Nom Complet",
+      "email": "Adresse Email",
+      "phone": "Numéro de Téléphone",
+      "date": "Date",
+      "time": "Heure",
+      "guests": "Nombre d'Invitations",
+      "specialRequests": "Demandes Spéciales",
+      "submit": "Réserver",
+      "verification": "Code de Vérification",
+      "verify": "Vérifier",
+      "success": "Réservation soumise avec succès ! Redirection vers la page d'accueil..."
+    },
+    "validation": {
+      "name": "Veuillez entrer un nom valide (2-50 caractères, lettres uniquement)",
+      "email": "Veuillez entrer une adresse email valide",
+      "phone": "Veuillez entrer un numéro de téléphone valide",
+      "date": "Veuillez sélectionner une date future",
+      "time": "Veuillez sélectionner une heure",
+      "guests": "Veuillez sélectionner entre 1 et 10 invités"
+    }
+  },
+  "navigation": {
+    "home": "Accueil",
+    "menu": "Menu",
+    "reservation": "Réservation",
+    "contact": "Contact"
+  }
+} 

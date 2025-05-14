@@ -1,0 +1,47 @@
+{
+  "nav": {
+    "home": "Home",
+    "menu": "Menu",
+    "about": "Over Ons",
+    "reservation": "Reserveren"
+  },
+  "hero": {
+    "title": "Welkom bij Restaurant Delbi",
+    "subtitle": "Ervaar authentieke keuken in een warme en gastvrije sfeer",
+    "cta": "Maak een Reservering"
+  },
+  "features": {
+    "title": "Waarom Delbi Kiezen?",
+    "subtitle": "Ontdek wat ons restaurant speciaal maakt",
+    "fresh": {
+      "title": "Verse Ingrediënten",
+      "description": "We gebruiken alleen de versste, lokaal geproduceerde ingrediënten in onze gerechten"
+    },
+    "chefs": {
+      "title": "Expert Chefs",
+      "description": "Onze ervaren chefs creëren elke dag culinaire meesterwerken"
+    },
+    "timing": {
+      "title": "Perfecte Timing",
+      "description": "Geniet van uw maaltijd in uw eigen tempo in onze comfortabele omgeving"
+    }
+  },
+  "cta": {
+    "title": "Klaar om Delbi te Ervaren?",
+    "subtitle": "Reserveer nu uw tafel en geniet van een onvergetelijke dinerervaring",
+    "button": "Maak een Reservering"
+  },
+  "cookie": {
+    "message": "We gebruiken cookies om uw ervaring te verbeteren en ons verkeer te analyseren. Door op \"Accepteren\" te klikken, stemt u in met ons gebruik van cookies.",
+    "accept": "Cookies Accepteren"
+  },
+  "footer": {
+    "contact": "Contact",
+    "address": "Restaurantstraat 123, 1234 AB Amsterdam",
+    "phone": "Tel: +31 20 123 4567",
+    "email": "Email: info@delbi.nl",
+    "quickLinks": "Snelle Links",
+    "language": "Taal",
+    "rights": "Alle rechten voorbehouden"
+  }
+} 

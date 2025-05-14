@@ -1,0 +1,222 @@
+{
+  "nav": {
+    "home": "Home",
+    "menu": "Menu",
+    "about": "About",
+    "reservation": "Reservation"
+  },
+  "about": {
+    "title": "About Delbi Restaurant",
+    "subtitle": "A Culinary Journey Through Time",
+    "description": "Discover the story behind Delbi Restaurant, our passion for food, and the talented team that makes it all possible.",
+    "imageAlt": "Delbi Restaurant interior",
+    "story": {
+      "title": "Our Story",
+      "content": "Founded in 2010, Delbi Restaurant has been serving exceptional cuisine to our valued guests for over a decade. Our journey began with a simple vision: to create a dining experience that combines traditional flavors with modern culinary techniques. Today, we continue to honor this vision while constantly innovating and pushing the boundaries of what's possible in the kitchen."
+    },
+    "team": {
+      "title": "Meet Our Team",
+      "chef": {
+        "name": "Chef Michael Anderson",
+        "position": "Executive Chef",
+        "description": "With over 20 years of experience in fine dining, Chef Michael brings his passion for innovative cuisine to every dish."
+      },
+      "manager": {
+        "name": "Sarah Thompson",
+        "position": "Restaurant Manager",
+        "description": "Sarah ensures that every guest receives exceptional service and has a memorable dining experience."
+      },
+      "sousChef": {
+        "name": "David Chen",
+        "position": "Sous Chef",
+        "description": "David's expertise in Asian fusion cuisine adds a unique dimension to our menu."
+      }
+    }
+  },
+  "menu": {
+    "title": "Our Menu",
+    "subtitle": "Discover our carefully crafted dishes made with the finest ingredients",
+    "categories": {
+      "starters": "Starters",
+      "mainCourses": "Main Courses",
+      "desserts": "Desserts",
+      "drinks": "Drinks"
+    },
+    "items": {
+      "starters": {
+        "1": {
+          "name": "Bruschetta",
+          "description": "Toasted bread topped with fresh tomatoes, garlic, and basil",
+          "price": "8.50"
+        },
+        "2": {
+          "name": "Calamari",
+          "description": "Crispy fried calamari served with marinara sauce",
+          "price": "12.00"
+        },
+        "3": {
+          "name": "Caprese Salad",
+          "description": "Fresh mozzarella, tomatoes, and basil drizzled with balsamic glaze",
+          "price": "10.50"
+        }
+      },
+      "mainCourses": {
+        "1": {
+          "name": "Grilled Salmon",
+          "description": "Fresh Atlantic salmon with seasonal vegetables and lemon butter sauce",
+          "price": "24.50"
+        },
+        "2": {
+          "name": "Beef Tenderloin",
+          "description": "Premium cut beef with truffle mashed potatoes and red wine reduction",
+          "price": "29.00"
+        },
+        "3": {
+          "name": "Vegetable Risotto",
+          "description": "Creamy Arborio rice with seasonal vegetables and parmesan",
+          "price": "18.50"
+        }
+      },
+      "desserts": {
+        "1": {
+          "name": "Tiramisu",
+          "description": "Classic Italian dessert with coffee-soaked ladyfingers and mascarpone cream",
+          "price": "8.00"
+        },
+        "2": {
+          "name": "Chocolate Lava Cake",
+          "description": "Warm chocolate cake with a molten center, served with vanilla ice cream",
+          "price": "9.50"
+        },
+        "3": {
+          "name": "Crème Brûlée",
+          "description": "Classic French vanilla custard with caramelized sugar top",
+          "price": "8.50"
+        }
+      },
+      "drinks": {
+        "1": {
+          "name": "House Red Wine",
+          "description": "Our signature blend of premium red wines",
+          "price": "7.50"
+        },
+        "2": {
+          "name": "Craft Beer",
+          "description": "Selection of local craft beers",
+          "price": "6.00"
+        },
+        "3": {
+          "name": "Signature Cocktail",
+          "description": "Our special house cocktail with premium spirits",
+          "price": "12.00"
+        }
+      }
+    }
+  },
+  "hero": {
+    "title": "Welcome to Delbi Restaurant",
+    "subtitle": "Experience authentic cuisine in a warm and welcoming atmosphere",
+    "cta": "Make a Reservation"
+  },
+  "features": {
+    "title": "Why Choose Delbi?",
+    "subtitle": "Discover what makes our restaurant special",
+    "fresh": {
+      "title": "Fresh Ingredients",
+      "description": "We use only the freshest, locally-sourced ingredients in our dishes"
+    },
+    "chefs": {
+      "title": "Expert Chefs",
+      "description": "Our experienced chefs create culinary masterpieces every day"
+    },
+    "timing": {
+      "title": "Perfect Timing",
+      "description": "Enjoy your meal at your own pace in our comfortable setting"
+    }
+  },
+  "cta": {
+    "title": "Ready to Experience Delbi?",
+    "subtitle": "Book your table now and enjoy an unforgettable dining experience",
+    "button": "Make a Reservation"
+  },
+  "cookie": {
+    "message": "We use cookies to enhance your experience and analyze our traffic. By clicking \"Accept\", you consent to our use of cookies.",
+    "accept": "Accept Cookies"
+  },
+  "footer": {
+    "contact": {
+      "title": "Contact Us",
+      "address": "123 Restaurant Street, City, Country",
+      "phone": "+1 (123) 456-7890",
+      "email": "info@delbi-restaurant.com"
+    },
+    "quickLinks": {
+      "title": "Quick Links",
+      "home": "Home",
+      "menu": "Menu",
+      "about": "About",
+      "reservation": "Reservation"
+    },
+    "hours": {
+      "title": "Opening Hours",
+      "weekdays": "Monday - Friday: 11:00 AM - 10:00 PM",
+      "weekend": "Saturday - Sunday: 10:00 AM - 11:00 PM"
+    },
+    "social": {
+      "title": "Follow Us",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "twitter": "Twitter"
+    },
+    "copyright": "All rights reserved."
+  },
+  "reservation": {
+    "title": "Make a Reservation",
+    "description": "Book your table at Delbi Restaurant",
+    "success": "Your reservation has been submitted successfully!",
+    "verification": {
+      "label": "Verification Code",
+      "placeholder": "Enter the code sent to your email",
+      "submit": "Verify",
+      "submitting": "Verifying..."
+    },
+    "form": {
+      "name": "Full Name",
+      "name.placeholder": "Enter your full name",
+      "email": "Email",
+      "email.placeholder": "Enter your email",
+      "phone": "Phone Number",
+      "phone.placeholder": "Enter your phone number",
+      "date": "Date",
+      "time": "Time",
+      "guests": "Number of Guests",
+      "guests.options": {
+        "1": "1 Person",
+        "2": "2 People",
+        "3": "3 People",
+        "4": "4 People",
+        "5": "5 People",
+        "6": "6 People",
+        "7": "7 People",
+        "8": "8 People"
+      },
+      "specialRequests": "Special Requests",
+      "submit": "Book Now",
+      "submitting": "Booking..."
+    },
+    "validation": {
+      "name": "Please enter a valid name (2-50 characters, letters only)",
+      "email": "Please enter a valid email address",
+      "phone": "Please enter a valid phone number",
+      "date": "Please select a future date",
+      "time": "Please select a time",
+      "guests": "Please select between 1 and 10 guests",
+      "cooldown": "Please wait a moment before trying again",
+      "tooManyAttempts": "Too many attempts. Please try again later.",
+      "verificationFailed": "Failed to send verification code",
+      "verificationError": "Failed to send verification code. Please try again.",
+      "invalidCode": "Invalid verification code",
+      "saveFailed": "Failed to save reservation"
+    }
+  }
+} 

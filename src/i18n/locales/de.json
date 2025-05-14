@@ -1,0 +1,38 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "menu": "Menü",
+    "about": "Über Uns",
+    "reservation": "Reservierung"
+  },
+  "hero": {
+    "title": "Willkommen im Restaurant Delbi",
+    "subtitle": "Erleben Sie authentische Küche in einer warmen und einladenden Atmosphäre",
+    "cta": "Tisch Reservieren"
+  },
+  "features": {
+    "title": "Warum Delbi Wählen?",
+    "subtitle": "Entdecken Sie, was unser Restaurant besonders macht",
+    "fresh": {
+      "title": "Frische Zutaten",
+      "description": "Wir verwenden nur die frischesten, lokal bezogenen Zutaten in unseren Gerichten"
+    },
+    "chefs": {
+      "title": "Expertenköche",
+      "description": "Unsere erfahrenen Köche kreieren täglich kulinarische Meisterwerke"
+    },
+    "timing": {
+      "title": "Perfektes Timing",
+      "description": "Genießen Sie Ihr Essen in Ihrem eigenen Tempo in unserer komfortablen Umgebung"
+    }
+  },
+  "cta": {
+    "title": "Bereit, Delbi zu Erleben?",
+    "subtitle": "Reservieren Sie jetzt Ihren Tisch und genießen Sie ein unvergessliches Dinerlebnis",
+    "button": "Tisch Reservieren"
+  },
+  "cookie": {
+    "message": "Wir verwenden Cookies, um Ihr Erlebnis zu verbessern und unseren Verkehr zu analysieren. Durch Klicken auf \"Akzeptieren\" stimmen Sie unserer Verwendung von Cookies zu.",
+    "accept": "Cookies Akzeptieren"
+  }
+} 

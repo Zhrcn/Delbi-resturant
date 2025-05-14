@@ -1,0 +1,114 @@
+{
+  "nav": {
+    "home": "Home",
+    "menu": "Menu",
+    "about": "Over Ons",
+    "reservation": "Reserveren"
+  },
+  "hero": {
+    "title": "Welkom bij Restaurant Delbi",
+    "subtitle": "Ervaar authentieke keuken in een warme en gastvrije sfeer",
+    "cta": "Maak een Reservering"
+  },
+  "features": {
+    "title": "Waarom Delbi Kiezen?",
+    "subtitle": "Ontdek wat ons restaurant speciaal maakt",
+    "fresh": {
+      "title": "Verse Ingrediënten",
+      "description": "We gebruiken alleen de versste, lokaal geproduceerde ingrediënten in onze gerechten"
+    },
+    "chefs": {
+      "title": "Expert Chefs",
+      "description": "Onze ervaren chefs creëren elke dag culinaire meesterwerken"
+    },
+    "timing": {
+      "title": "Perfecte Timing",
+      "description": "Geniet van uw maaltijd in uw eigen tempo in onze comfortabele omgeving"
+    }
+  },
+  "cta": {
+    "title": "Klaar om Delbi te Ervaren?",
+    "subtitle": "Reserveer nu uw tafel en geniet van een onvergetelijke dinerervaring",
+    "button": "Maak een Reservering"
+  },
+  "cookie": {
+    "message": "We gebruiken cookies om uw ervaring te verbeteren en ons verkeer te analyseren. Door op \"Accepteren\" te klikken, stemt u in met ons gebruik van cookies.",
+    "accept": "Cookies Accepteren"
+  },
+  "footer": {
+    "contact": {
+      "title": "Contact",
+      "address": "Restaurantstraat 123, 1234 AB Amsterdam",
+      "phone": "Tel: +31 20 123 4567",
+      "email": "Email: info@delbi.nl"
+    },
+    "quickLinks": {
+      "title": "Snelle Links",
+      "home": "Home",
+      "menu": "Menu",
+      "about": "Over Ons",
+      "reservation": "Reserveren"
+    },
+    "hours": {
+      "title": "Openingstijden",
+      "weekdays": "Maandag - Vrijdag: 11:00 - 22:00",
+      "weekend": "Zaterdag - Zondag: 10:00 - 23:00"
+    },
+    "social": {
+      "title": "Volg Ons",
+      "facebook": "Facebook",
+      "instagram": "Instagram",
+      "twitter": "Twitter"
+    },
+    "copyright": "Alle rechten voorbehouden."
+  },
+  "reservation": {
+    "title": "Maak een Reservering",
+    "description": "Reserveer uw tafel bij Restaurant Delbi",
+    "success": "Uw reservering is succesvol ingediend!",
+    "verification": {
+      "label": "Verificatiecode",
+      "placeholder": "Voer de code in die naar uw e-mail is verzonden",
+      "submit": "Verifiëren",
+      "submitting": "Verifiëren..."
+    },
+    "form": {
+      "name": "Volledige Naam",
+      "name.placeholder": "Voer uw volledige naam in",
+      "email": "E-mail",
+      "email.placeholder": "Voer uw e-mailadres in",
+      "phone": "Telefoonnummer",
+      "phone.placeholder": "Voer uw telefoonnummer in",
+      "date": "Datum",
+      "time": "Tijd",
+      "guests": "Aantal Gasten",
+      "guests.options": {
+        "1": "1 Persoon",
+        "2": "2 Personen",
+        "3": "3 Personen",
+        "4": "4 Personen",
+        "5": "5 Personen",
+        "6": "6 Personen",
+        "7": "7 Personen",
+        "8": "8 Personen"
+      },
+      "specialRequests": "Speciale Verzoeken",
+      "submit": "Nu Reserveren",
+      "submitting": "Reserveren..."
+    },
+    "validation": {
+      "name": "Voer een geldige naam in (2-50 tekens, alleen letters)",
+      "email": "Voer een geldig e-mailadres in",
+      "phone": "Voer een geldig telefoonnummer in",
+      "date": "Selecteer een toekomstige datum",
+      "time": "Selecteer een tijd",
+      "guests": "Selecteer tussen 1 en 10 gasten",
+      "cooldown": "Wacht even voordat u het opnieuw probeert",
+      "tooManyAttempts": "Te veel pogingen. Probeer het later opnieuw.",
+      "verificationFailed": "Verificatiecode verzenden mislukt",
+      "verificationError": "Verificatiecode verzenden mislukt. Probeer het opnieuw.",
+      "invalidCode": "Ongeldige verificatiecode",
+      "saveFailed": "Reservering opslaan mislukt"
+    }
+  }
+} 
