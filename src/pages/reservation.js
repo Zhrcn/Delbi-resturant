@@ -90,9 +90,9 @@ export default function Reservation() {
     setIsSubmitting(true);
     setSubmissionCount(prev => prev + 1);
     setLastSubmissionTime(now);
+    setErrors({}); // Clear previous errors
 
     try {
-      // Send verification code
       const response = await fetch('/api/send-verification', {
         method: 'POST',
         headers: {
@@ -104,13 +104,23 @@ export default function Reservation() {
         }),
       });
 
+      const data = await response.json();
+      
       if (!response.ok) {
-        throw new Error(t('reservation.validation.verificationFailed'));
+        throw new Error(data.error || t('reservation.validation.verificationFailed'));
+      }
+      
+      // Display test code in development mode
+      if (data.testCode && process.env.NODE_ENV !== 'production') {
+        setVerificationCode(data.testCode);
       }
 
       setShowVerification(true);
     } catch (error) {
-      setErrors({ submit: t('reservation.validation.verificationError') });
+      console.error('Verification error:', error);
+      setErrors({ 
+        submit: error.message || t('reservation.validation.verificationError') 
+      });
     } finally {
       setIsSubmitting(false);
     }
@@ -120,6 +130,10 @@ export default function Reservation() {
     e.preventDefault();
     setIsSubmitting(true);
     
+    // Get the verification code from the form
+    const code = e.target.verificationCode.value;
+    console.log('Submitting verification:', { email: formData.email, code });
+    
     try {
       const response = await fetch('/api/verify-code', {
         method: 'POST',
@@ -128,15 +142,17 @@ export default function Reservation() {
         },
         body: JSON.stringify({
           email: formData.email,
-          code: e.target.verificationCode.value,
+          code: code,
         }),
       });
 
       if (!response.ok) {
-        throw new Error(t('reservation.validation.invalidCode'));
+        const errorData = await response.json();
+        throw new Error(errorData.error || t('reservation.validation.invalidCode'));
       }
 
       // Save reservation
+      console.log('Verification successful, saving reservation:', formData);
       const reservationResponse = await fetch('/api/reservations', {
         method: 'POST',
         headers: {
@@ -145,15 +161,36 @@ export default function Reservation() {
         body: JSON.stringify(formData),
       });
 
-      if (!reservationResponse.ok) {
-        throw new Error(t('reservation.validation.saveFailed'));
+      // Log the full response for debugging
+      console.log('Reservation API response status:', reservationResponse.status);
+      
+      const responseText = await reservationResponse.text();
+      console.log('Reservation API raw response:', responseText);
+      
+      // Try to parse as JSON, but handle cases where it might not be valid JSON
+      let reservationData;
+      try {
+        reservationData = JSON.parse(responseText);
+        console.log('Reservation API response data:', reservationData);
+      } catch (parseError) {
+        console.error('Failed to parse reservation response as JSON:', parseError);
+        throw new Error('Invalid response format from server');
       }
+
+      if (!reservationResponse.ok) {
+        const errorMessage = reservationData?.error || t('reservation.validation.saveFailed');
+        console.error('Reservation save failed:', errorMessage);
+        throw new Error(errorMessage);
+      }
+
+      console.log('Reservation saved successfully:', reservationData);
 
       setSuccess(true);
       setTimeout(() => {
         router.push('/');
       }, 3000);
     } catch (error) {
+      console.error('Error during verification/save:', error);
       setErrors({ verification: error.message });
     } finally {
       setIsSubmitting(false);
@@ -226,6 +263,16 @@ export default function Reservation() {
                   <p className="mt-2 text-sm text-red-500 dark:text-red-400">{errors.verification}</p>
                 )}
               </div>
+              
+              {/* Display test verification code in development mode */}
+              {verificationCode && process.env.NODE_ENV !== 'production' && (
+                <div className="mb-6 p-4 bg-blue-50 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-800 rounded-lg">
+                  <p className="text-sm font-medium text-blue-700 dark:text-blue-300">
+                    Test Mode: Your verification code is <span className="font-bold">{verificationCode}</span>
+                  </p>
+                </div>
+              )}
+
               <div className="flex justify-end">
                 <button
                   type="submit"

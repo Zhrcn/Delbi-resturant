@@ -17,7 +17,7 @@
       "submit": "Make Reservation",
       "verification": "Verification Code",
       "verify": "Verify",
-      "success": "Reservation submitted successfully! Redirecting to homepage..."
+      "success": "Your reservation request has been submitted successfully! It's currently pending review by our staff. We'll contact you once it's confirmed. Redirecting to homepage..."
     },
     "validation": {
       "name": "Please enter a valid name (2-50 characters, letters only)",

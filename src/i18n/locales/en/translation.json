@@ -35,7 +35,10 @@
   },
   "menu": {
     "title": "Our Menu",
-    "subtitle": "Discover our carefully crafted dishes made with the finest ingredients",
+    "description": "Discover our selection of authentic Middle Eastern dishes",
+    "subtitle": "Explore our carefully crafted dishes and flavors",
+    "allCategories": "All Categories",
+    "unavailable": "Temporarily Unavailable",
     "categories": {
       "starters": "Starters",
       "mainCourses": "Main Courses",
