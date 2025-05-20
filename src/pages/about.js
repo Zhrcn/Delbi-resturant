@@ -15,7 +15,7 @@ export default function About() {
       <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
         {/* Hero Section */}
         <div className="relative h-[40vh] flex items-center justify-center bg-cover bg-center" 
-             style={{ backgroundImage: "url('/rest-bg.jpg')" }}>
+             style={{ backgroundImage: "url('/images/staff.jpg')" }}>
           <div className="absolute inset-0 bg-black bg-opacity-50 dark:bg-opacity-70"></div>
           <div className="relative z-10 text-center text-white px-4">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
@@ -40,7 +40,7 @@ export default function About() {
             </div>
             <div className="relative h-[400px] rounded-lg overflow-hidden">
               <Image
-                src="/rest-bg.jpg"
+                src="/images/staff.jpg"
                 alt={t('about.imageAlt')}
                 fill
                 className="object-cover"
@@ -59,7 +59,7 @@ export default function About() {
                   <div className="relative w-48 h-48 mx-auto mb-4">
                     <img
                       className="rounded-full object-cover w-full h-full"
-                      src={`/team/${member}.jpg`}
+                      src={`/images/team/${member}.jpg`}
                       alt={t(`about.team.${member}.name`)}
                     />
                   </div>
