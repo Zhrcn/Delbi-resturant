@@ -216,7 +216,7 @@ export default function Reservation() {
       );
     }
     return options;
-  };
+  };  
 
   return (
     <>
@@ -228,10 +228,10 @@ export default function Reservation() {
       <main className="min-h-screen bg-cover bg-center py-12 px-4 sm:px-6 lg:px-8" style={{ backgroundImage: "url('/images/reservation.jpg')" }}>
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
-            <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
+            <h1 className="text-4xl font-bold text-white mb-4">
               {t('reservation.title')}
             </h1>
-            <p className="text-lg text-gray-600 dark:text-gray-300">
+            <p className="text-lg text-gray-300">
               {t('reservation.description')}
             </p>
           </div>

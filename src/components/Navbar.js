@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { useTranslation } from 'react-i18next';
 import ThemeToggle from './ThemeToggle';
 import LanguageSwitcher from './LanguageSwitcher';
@@ -7,28 +8,44 @@ import LanguageSwitcher from './LanguageSwitcher';
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const { t } = useTranslation();
+  const router = useRouter();
+  const currentPath = router.pathname;
+
+  const navLinkClass = (path) =>
+    `px-3 py-2 rounded-md text-sm font-medium ${
+      currentPath === path
+        ? 'text-primary-light dark:text-primary-dark font-semibold'
+        : 'text-gray-900 dark:text-white hover:text-primary-light dark:hover:text-primary-dark'
+    }`;
+
+  const mobileNavLinkClass = (path) =>
+    `block px-3 py-2 rounded-md text-base font-medium ${
+      currentPath === path
+        ? 'text-primary-light dark:text-primary-dark font-semibold'
+        : 'text-gray-900 dark:text-white hover:text-primary-light dark:hover:text-primary-dark'
+    }`;
 
   return (
     <nav className="bg-white dark:bg-gray-800 shadow-lg">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
-            <div className="flex-shrink-0 flex items-center">
-              <Link href="/" className="text-2xl font-bold text-primary-light dark:text-primary-dark">
-                Delbi
-              </Link>
-            </div>
-          <div className="flex  ">
-            <div className="hidden sm:ml-6 sm:flex sm:space-x-8 justify-center pl-16  items-center">
-              <Link href="/" className="text-gray-900 dark:text-white hover:text-primary-light dark:hover:text-primary-dark px-3 py-2 rounded-md text-sm font-medium">
+          <div className="flex-shrink-0 flex items-center">
+            <Link href="/" className="text-2xl font-bold text-primary-light dark:text-primary-dark">
+              Delbi
+            </Link>
+          </div>
+          <div className="flex">
+            <div className="hidden sm:ml-6 sm:flex sm:space-x-8 justify-center pl-16 items-center">
+              <Link href="/" className={navLinkClass('/')}>
                 {t('nav.home')}
               </Link>
-              <Link href="/menu" className="text-gray-900 dark:text-white hover:text-primary-light dark:hover:text-primary-dark px-3 py-2 rounded-md text-sm font-medium">
+              <Link href="/menu" className={navLinkClass('/menu')}>
                 {t('nav.menu')}
               </Link>
-              <Link href="/about" className="text-gray-900 dark:text-white hover:text-primary-light dark:hover:text-primary-dark px-3 py-2 rounded-md text-sm font-medium">
+              <Link href="/about" className={navLinkClass('/about')}>
                 {t('nav.about')}
               </Link>
-              <Link href="/reservation" className="text-gray-900 dark:text-white hover:text-primary-light dark:hover:text-primary-dark px-3 py-2 rounded-md text-sm font-medium">
+              <Link href="/reservation" className={navLinkClass('/reservation')}>
                 {t('nav.reservation')}
               </Link>
             </div>
@@ -60,16 +77,16 @@ export default function Navbar() {
       {/* Mobile menu */}
       <div className={`${isOpen ? 'block' : 'hidden'} sm:hidden`}>
         <div className="pt-2 pb-3 space-y-1">
-          <Link href="/" className="block text-gray-900 dark:text-white hover:text-primary-light dark:hover:text-primary-dark px-3 py-2 rounded-md text-base font-medium">
+          <Link href="/" className={mobileNavLinkClass('/')}>
             {t('nav.home')}
           </Link>
-          <Link href="/menu" className="block text-gray-900 dark:text-white hover:text-primary-light dark:hover:text-primary-dark px-3 py-2 rounded-md text-base font-medium">
+          <Link href="/menu" className={mobileNavLinkClass('/menu')}>
             {t('nav.menu')}
           </Link>
-          <Link href="/about" className="block text-gray-900 dark:text-white hover:text-primary-light dark:hover:text-primary-dark px-3 py-2 rounded-md text-base font-medium">
+          <Link href="/about" className={mobileNavLinkClass('/about')}>
             {t('nav.about')}
           </Link>
-          <Link href="/reservation" className="block text-gray-900 dark:text-white hover:text-primary-light dark:hover:text-primary-dark px-3 py-2 rounded-md text-base font-medium">
+          <Link href="/reservation" className={mobileNavLinkClass('/reservation')}>
             {t('nav.reservation')}
           </Link>
         </div>
@@ -82,4 +99,4 @@ export default function Navbar() {
       </div>
     </nav>
   );
-} 
+}
