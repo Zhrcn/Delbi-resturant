@@ -16,20 +16,20 @@ export default async function handler(req, res) {
       case 'GET':
         try {
           // Try database first
-          // Get all reservations or a specific one if ID provided
-          if (req.query.id) {
+        // Get all reservations or a specific one if ID provided
+        if (req.query.id) {
             const reservation = await findOne('Reservation', { _id: req.query.id });
             if (reservation) {
-              return res.status(200).json(reservation);
+          return res.status(200).json(reservation);
             }
-          }
-          
-          // Optional filtering by date
-          const query = {};
-          if (req.query.date) {
-            query.date = req.query.date;
-          }
-          
+        }
+        
+        // Optional filtering by date
+        const query = {};
+        if (req.query.date) {
+          query.date = req.query.date;
+        }
+        
           const reservations = await find('Reservation', query);
           return res.status(200).json(reservations);
         } catch (dbError) {
@@ -53,7 +53,7 @@ export default async function handler(req, res) {
               reservations = reservations.filter(r => r.date === req.query.date);
             }
             
-            return res.status(200).json(reservations);
+        return res.status(200).json(reservations);
           }
           
           // Re-throw if not in test mode
@@ -78,15 +78,15 @@ export default async function handler(req, res) {
           
           // Create the reservation object
           const reservationData = {
-            name,
+          name,
             email,
-            phone,
-            date,
-            time,
-            guests: parseInt(guests),
+          phone,
+          date,
+          time,
+          guests: parseInt(guests),
             specialRequests: req.body.specialRequests || '',
             status: 'pending',
-            createdAt: new Date()
+          createdAt: new Date()
           };
           
           // First create the reservations collection if it doesn't exist
@@ -157,11 +157,11 @@ export default async function handler(req, res) {
         
         try {
           const updatedReservation = await updateOne('Reservation', { _id: id }, updateData);
-          if (updatedReservation.matchedCount === 0) {
-            return res.status(404).json({ error: 'Reservation not found' });
-          }
-          
-          return res.status(200).json({ message: 'Reservation updated successfully' });
+        if (updatedReservation.matchedCount === 0) {
+          return res.status(404).json({ error: 'Reservation not found' });
+        }
+        
+        return res.status(200).json({ message: 'Reservation updated successfully' });
         } catch (dbError) {
           // Fall back to in-memory if database fails
           if (isTestMode) {
@@ -195,11 +195,11 @@ export default async function handler(req, res) {
         
         try {
           const deletedReservation = await deleteOne('Reservation', { _id: deleteId });
-          if (deletedReservation.deletedCount === 0) {
-            return res.status(404).json({ error: 'Reservation not found' });
-          }
-          
-          return res.status(200).json({ message: 'Reservation deleted successfully' });
+        if (deletedReservation.deletedCount === 0) {
+          return res.status(404).json({ error: 'Reservation not found' });
+        }
+        
+        return res.status(200).json({ message: 'Reservation deleted successfully' });
         } catch (dbError) {
           // Fall back to in-memory if database fails
           if (isTestMode) {

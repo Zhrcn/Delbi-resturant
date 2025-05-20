@@ -179,8 +179,8 @@ export default function Dashboard() {
             }, {
               starters: [],
               'main-courses': [],
-              desserts: [],
-              drinks: [],
+        desserts: [],
+        drinks: [],
               other: []
             });
             
@@ -251,13 +251,13 @@ export default function Dashboard() {
       await fetchData();
       
       // Clear the form
-      setNewItem({
-        name: '',
-        description: '',
-        price: '',
-        category: 'starters',
-        image: '',
-      });
+    setNewItem({
+      name: '',
+      description: '',
+      price: '',
+      category: 'starters',
+      image: '',
+    });
     } catch (error) {
       console.error('Error adding menu item:', error);
       alert(`Failed to add item: ${error.message}`);
@@ -308,14 +308,14 @@ export default function Dashboard() {
       await fetchData();
       
       // Clear the form
-      setEditingItem(null);
-      setNewItem({
-        name: '',
-        description: '',
-        price: '',
-        category: 'starters',
-        image: '',
-      });
+    setEditingItem(null);
+    setNewItem({
+      name: '',
+      description: '',
+      price: '',
+      category: 'starters',
+      image: '',
+    });
     } catch (error) {
       console.error('Error updating menu item:', error);
       alert(`Failed to update item: ${error.message}`);
@@ -420,41 +420,41 @@ export default function Dashboard() {
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                   </svg>
-                </div>
+          </div>
                 <div>
                   <p className="text-red-100 text-sm font-medium">Total Reservations</p>
                   <p className="text-2xl font-bold">{reservations.length}</p>
-                </div>
-              </div>
-              
+          </div>
+        </div>
+
               <div className="bg-white/10 backdrop-blur-md rounded-xl p-5 border border-white/20 shadow-inner flex items-center">
                 <div className="h-12 w-12 rounded-lg bg-white/20 flex items-center justify-center mr-4 shadow-lg">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                   </svg>
                 </div>
-                <div>
+                    <div>
                   <p className="text-red-100 text-sm font-medium">Menu Items</p>
                   <p className="text-2xl font-bold">{Object.values(menuItems).reduce((total, items) => total + items.length, 0)}</p>
-                </div>
-              </div>
+                    </div>
+                  </div>
               
               <div className="bg-white/10 backdrop-blur-md rounded-xl p-5 border border-white/20 shadow-inner flex items-center">
                 <div className="h-12 w-12 rounded-lg bg-white/20 flex items-center justify-center mr-4 shadow-lg">
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                </div>
-                <div>
+                  </div>
+                  <div>
                   <p className="text-red-100 text-sm font-medium">Today&apos;s Reservations</p>
                   <p className="text-2xl font-bold">
                     {reservations.filter(r => new Date(r.date).toDateString() === new Date().toDateString()).length}
                   </p>
-                </div>
+                  </div>
               </div>
-            </div>
-          </div>
-        </div>
+                  </div>
+                  </div>
+              </div>
 
         {/* Database Status */}
         <div className="bg-white dark:bg-gray-800 rounded-xl shadow-md border border-gray-100 dark:border-gray-700 p-6">
@@ -464,8 +464,8 @@ export default function Dashboard() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
               </svg>
               <h2 className="text-xl font-semibold text-gray-900 dark:text-white">Database Status</h2>
-            </div>
-            <button
+                          </div>
+                            <button
               onClick={checkDatabaseConnection}
               disabled={dbStatus.checking}
               className="px-4 py-2 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 
@@ -488,8 +488,8 @@ export default function Dashboard() {
                   <span>Check Connection</span>
                 </>
               )}
-            </button>
-          </div>
+                            </button>
+                          </div>
           
           {dbStatus.lastChecked && (
             <div className="text-sm mb-3 text-gray-500 dark:text-gray-400 flex items-center">
@@ -499,7 +499,7 @@ export default function Dashboard() {
               Last checked: {new Date(dbStatus.lastChecked).toLocaleString()}
             </div>
           )}
-          
+
           <div className={`p-4 rounded-lg flex items-center ${
             dbStatus.connected 
               ? 'bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800/30' 
@@ -568,8 +568,8 @@ export default function Dashboard() {
                     <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Time</th>
                     <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Guests</th>
                     <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Status</th>
-                  </tr>
-                </thead>
+                    </tr>
+                  </thead>
                 <tbody className="bg-white dark:bg-gray-800 divide-y divide-gray-200 dark:divide-gray-700">
                   {reservations.slice(0, 5).map((reservation) => (
                     <tr key={reservation._id} className="hover:bg-red-50 dark:hover:bg-red-900/10 transition-colors">
@@ -578,29 +578,29 @@ export default function Dashboard() {
                       </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-300">
                         {new Date(reservation.date).toLocaleDateString()}
-                      </td>
+                        </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-300">
                         {reservation.time}
-                      </td>
+                        </td>
                       <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 dark:text-gray-300">
                         {reservation.guests}
-                      </td>
-                      <td className="px-6 py-4 whitespace-nowrap">
+                        </td>
+                        <td className="px-6 py-4 whitespace-nowrap">
                         <span className={`px-2.5 py-1 text-xs font-medium rounded-full ${
-                          reservation.status === 'confirmed' 
+                            reservation.status === 'confirmed'
                             ? 'bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300' 
                             : reservation.status === 'pending' 
                               ? 'bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-300'
                               : 'bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-300'
                         }`}>
                           {reservation.status || 'pending'}
-                        </span>
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+                          </span>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
           ) : (
             <div className="bg-gray-50 dark:bg-gray-700/30 rounded-xl p-8 text-center border border-gray-100 dark:border-gray-700">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 mx-auto text-gray-400 dark:text-gray-500 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
