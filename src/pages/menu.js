@@ -1,12 +1,11 @@
 import { useTranslation } from 'react-i18next';
 import Head from 'next/head';
 import { useState } from 'react';
-import Image from 'next/image';
 
 export default function Menu({ menuItems }) {
   const { t } = useTranslation();
   const [activeCategory, setActiveCategory] = useState('all');
-  
+
   // Group menu items by category
   const groupedMenuItems = menuItems.reduce((acc, item) => {
     if (!acc[item.category]) {
@@ -18,11 +17,12 @@ export default function Menu({ menuItems }) {
 
   // Get unique categories from the menu items
   const categories = Object.keys(groupedMenuItems);
-  
+
   // Filter menu items based on active category
-  const filteredItems = activeCategory === 'all' 
-    ? menuItems 
-    : menuItems.filter(item => item.category === activeCategory);
+  const filteredItems =
+    activeCategory === 'all'
+      ? menuItems
+      : menuItems.filter(item => item.category === activeCategory);
 
   return (
     <>
@@ -41,7 +41,7 @@ export default function Menu({ menuItems }) {
               {t('menu.subtitle')}
             </p>
           </div>
-          
+
           {/* Category filter */}
           <div className="flex flex-wrap justify-center mt-10 gap-2">
             <button
@@ -119,34 +119,29 @@ export default function Menu({ menuItems }) {
   );
 }
 
-export async function getServerSideProps() {
+// Use the request headers to build an absolute URL for the API call.
+export async function getServerSideProps(context) {
+  const { req } = context;
+  // Determine protocol (x-forwarded-proto is set by Vercel for HTTPS requests)
+  const protocol = req.headers['x-forwarded-proto'] || 'http';
+  // Extract host from the request headers
+  const host = req.headers['host'];
+  const baseUrl = `${protocol}://${host}`;
+
   try {
-    // Use absolute URL for local development and production
-    const protocol = process.env.NODE_ENV === 'production' ? 'https' : 'http';
-    const host = process.env.VERCEL_URL || 'localhost:3000';
-    const baseUrl = `${protocol}://${host}`;
-    
-    // Fetch menu items from the API
     const res = await fetch(`${baseUrl}/api/menu`);
-    
     if (!res.ok) {
       console.error(`Failed to fetch menu: ${res.status} ${res.statusText}`);
       return { props: { menuItems: [] } };
     }
-    
     const menuItems = await res.json();
-    
     return {
-      props: {
-        menuItems,
-      },
+      props: { menuItems },
     };
   } catch (error) {
     console.error('Failed to fetch menu items:', error);
     return {
-      props: {
-        menuItems: [],
-      },
+      props: { menuItems: [] },
     };
   }
-} 
+}
